@@ -26,11 +26,11 @@ const Navbar = () => {
         <button className="themeButton" onClick={switchTheme}>
           {themeState.theme ? "☀️" : "🌜"}
         </button>
-        <div>
+        <div className="refers">
           <Link to="/">
             <h3>Home</h3>
           </Link>
-          <Link to="/destacado">
+          <Link to="/destacados">
             <h3>Destacados</h3>
           </Link>
           <Link to="/contacto">

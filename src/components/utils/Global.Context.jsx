@@ -26,10 +26,7 @@ import {
   const initialThemeState = themes.light;
   const initialState = [];
   
-  // JSON.parse(localStorage.getItem("destacados")) || [];
-
-
-  
+ 
  const odontologoReducer = (state, action) => {
       switch (action.type) {
         case "GET_ODONTOLOGOS":

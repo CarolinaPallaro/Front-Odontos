@@ -16,10 +16,10 @@ const Detalle = () => {
     <div className={themeState.className}>
       <h1>Ver mas sobre este Odontólogo</h1>
       <div className="card">
-        <h3>{odontologoState.odontologoDetalle.name}</h3>
-        <h4>{odontologoState.odontologoDetalle.email}</h4>
-        <p>{odontologoState.odontologoDetalle.phone}</p>
-        <p>{odontologoState.odontologoDetalle.website}</p>
+        <h3>Nombre: {odontologoState.odontologoDetalle.name}</h3>
+        <h4>Correo:{odontologoState.odontologoDetalle.email}</h4>
+        <p>Teléfono: {odontologoState.odontologoDetalle.phone}</p>
+        <p>Sitio Web: {odontologoState.odontologoDetalle.website}</p>
       </div>
       <button className="backButton" onClick={() => navigate(-1)}>
         ⬅

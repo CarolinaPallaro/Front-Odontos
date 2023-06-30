@@ -1,21 +1,27 @@
 import React, { useState, useEffect } from "react";
 import { useGlobalStates } from "../components/utils/Global.Context";
-// import { Link } from "react-router-dom";
-// import destacados from "../routes/Destacados";
+import { Link } from "react-router-dom";
+import destacados from "../routes/Destacados";
 
-const Card = ({ name, username, id }) => {
-  const { destacadoDispatch, addDestacado, deleteDestacado } = useGlobalStates();
+const Card = ({ name, username, id, addOdontologo, odontologo, deleteOdontologo }) => {
+
+  const { destacadoDispatch, addDestacado, deleteDestacad } = useGlobalStates();
   const [isAdded, setIsAdded] = useState(false);
 
   const handleToggleDestacado = () => {
     if (isAdded) {
-      "Agregar💙";
+      "Agregar💙" ;
+      console.log('me quiero morir');
+      addOdontologo(odontologo);
     } else {
-      "Eliminar🤍";
+      "Eliminar🤍"
+      deleteOdontologo(odontologo);
+    
     }
     setIsAdded(!isAdded);
   };
 
+  
   return (
     <div className="card">
       <img
