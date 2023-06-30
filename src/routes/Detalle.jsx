@@ -5,12 +5,12 @@ import { useGlobalStates } from "../components/utils/Global.Context";
 
 const Detalle = () => {
   const { id } = useParams();
-  const { odontologoState, odontologoDispatch, getOdontologo,themeState } =
+  const { odontologoState, getOdontologo,themeState } =
     useGlobalStates();
   const navigate = useNavigate();
   useEffect(() => {
     getOdontologo(id);
-  }, [id]);
+  }, []);
 
   return (
     <div className={themeState.className}>
