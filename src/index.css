@@ -169,12 +169,12 @@ form > input{
 width: 300px;
 padding: 10px;
 margin-bottom: 20px ;
-border: solid #888686;
+border: solid #4a8885;
 border-radius: 5px;
 }
 
 .error{
- color: red;
+ color: rgb(204, 63, 63);
  margin-top: 70px;
  padding: 20px;
  border-radius: 5px;

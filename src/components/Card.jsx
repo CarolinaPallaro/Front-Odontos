@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { useGlobalStates } from '../components/utils/Global.Context'
-import { Link } from 'react-router-dom'
+
 
 const Card = ({
   name,
@@ -27,7 +27,7 @@ const Card = ({
     <div className='card'>
       <img
         className='imgdoctor'
-        src='\src\assets\images\vector.png'
+        src='public\images\vector.png'
         alt='foto odontologo'
       />
       <h3>{name}</h3>
@@ -35,7 +35,7 @@ const Card = ({
       <a href={'/detalle/' + id}>
         <img
           className='info-icon'
-          src='\src\assets\images\info.png'
+          src='/public/images/info.png'
           alt='información'
         />
       </a>

@@ -13,7 +13,17 @@ const Detalle = () => {
   }, []);
 
   return (
-    <div className={themeState.className}>
+    <div
+      className={`${themeState.className}`}
+      style={{
+        display:"flex",
+        flexDirection:"column",
+        justifyContent: "flex-start",
+        alignItems: "center",
+        height: "100vh",
+        
+      }}
+    >
       <h1>Ver mas sobre este Odontólogo</h1>
       <div className="card">
         <h3>Nombre: {odontologoState.odontologoDetalle.name}</h3>
