@@ -27,7 +27,7 @@ const Card = ({
     <div className='card'>
       <img
         className='imgdoctor'
-        src='public\images\vector.png'
+        src='\images\vector.png'
         alt='foto odontologo'
       />
       <h3>{name}</h3>
@@ -35,7 +35,7 @@ const Card = ({
       <a href={'/detalle/' + id}>
         <img
           className='info-icon'
-          src='/public/images/info.png'
+          src='/images/info.png'
           alt='información'
         />
       </a>
